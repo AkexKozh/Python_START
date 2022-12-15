@@ -8,3 +8,13 @@
 4
 [1, 2, 6, 24]
 """
+
+
+number = int(input("Enter the number: "))
+num = 1
+x = []
+for i in range(1, number + 1):
+    num *= i
+    i += 1
+    x.append(num)
+print(x)

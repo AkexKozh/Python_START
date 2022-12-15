@@ -11,6 +11,8 @@
 0.56
 11
 """
+
+
 number = float(input('Введите вещественное число: '))  
 sum = []
 x = abs(number)
