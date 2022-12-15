@@ -11,12 +11,14 @@
 11 5
 9.22
 """
-import math
 
-x1 = int(input("Введите координату x1: "))
-y1 = int(input("Введите координату y1: "))
-x2 = int(input("Введите координату x2: "))
-y2 = int(input("Введите координату y2: "))
 
-distance = float(round(math.sqrt((x2 - x1)**2 + (y2 - y1)**2), 2))
-print(distance)
+
+from math import sqrt
+
+x1 = int(input("Введите x1: "))
+y1 = int(input("Введите y1: "))
+x2 = int(input("Введите x2: "))
+y2 = int(input("Введите y2: "))
+
+print(round(sqrt((x1 - x2) ** 2 + (y1 - y2) ** 2), 2))

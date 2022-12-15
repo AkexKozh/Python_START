@@ -15,11 +15,7 @@ True
 1
 False
 """
-day = int(input("Введите день недели от 1 до 7: "))
 
-if day < 1 or day > 7:
-    print("Некорректное число!")
-elif day > 5:
-    print(bool(1))
-else:
-    print(bool(0))
+
+number_day = int(input("Введите цифру, обозначающую день недели: "))
+print(number_day in [6, 7])

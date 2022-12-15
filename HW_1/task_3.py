@@ -19,16 +19,15 @@
 0
 Точка на отрицательной части оси абсцисс
 """
-x = int(input('Введите координату x: '))
-y = int(input('Введите координату y: '))
+quarter_number = int(input('Введите номер четверти: '))
 
-if x == 0 and y == 0:
-    print("Точка в начале координат")
-elif x > 0 and y > 0:
-    print("Точка находится в плоскости 1")
-elif x < 0 and y > 0:
-    print("Точка находится в плоскости 2")
-elif x < 0 and y < 0:
-    print("Точка находится в плоскости 3")
-elif x > 0 and y < 0:
-    print("Точка находится в плоскости 4")
+if quarter_number == 1:
+  print('x > 0 and y > 0')
+elif quarter_number == 4:
+  print('x > 0 and y < 0')
+elif quarter_number == 2:
+  print('x < 0 and y > 0')
+elif quarter_number == 3:
+  print('x < 0 and y < 0')
+elif quarter_number < 1 or quarter_number > 4:
+    print('Цифра введена некорректно')

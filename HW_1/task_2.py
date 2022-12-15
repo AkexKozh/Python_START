@@ -3,11 +3,12 @@
 
 Вывод: единственное значение типа bool (True либо False)
 """
-x = int(input("Введите x: "))
-y = int(input("Введите y: "))
-z = int(input("Введите z: "))
 
-if not (x or y or z) == (not x and not y and not z):
-    print(bool(1))
-else:
-    print(bool(0))
+
+
+res = []
+for x in [True, False]:
+    for y in [True, False]:
+        for z in [True, False]:
+            res.append((not (x or y or z)) == (not x and not y and not z))
+print(all(res))
