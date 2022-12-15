@@ -11,3 +11,13 @@
 0.56
 11
 """
+number = float(input('Введите вещественное число: '))  
+sum = []
+x = abs(number)
+sum = 0
+
+for i in str(x):
+    if i != '.': 
+        sum += int(i)
+    
+print(sum) 
